@@ -1,9 +1,6 @@
 {
   "name": "accessrights",
   "version": "0.0.1",
-  "engines": {
-    "node": "12.X"
-  },
   "scripts": {
     "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
   },

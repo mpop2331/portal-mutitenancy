@@ -30,8 +30,8 @@ modules:
     type: nodejs
     path: gen/srv
     parameters:
-      disk-quota: 512M
-      memory: 256M
+      disk-quota: 1024M
+      memory: 1024M
       buildpack: nodejs_buildpack
     build-parameters:
       ignore: ["default-env.json", "node_modules/"]
@@ -61,8 +61,8 @@ modules:
     type: nodejs
     path: cloud-foundry/approuter
     parameters:
-      disk-quota: 160M
-      memory: 128M
+      disk-quota: 1024M
+      memory: 1024M
       buildpack: nodejs_buildpack
     properties:
       TENANT_HOST_PATTERN: "^(.*)-${space}-${app-name}.${default-domain}"
